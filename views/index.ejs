@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Cat Facts!</title>
+  </head>
+  <body>
+    <div>
+      <fieldset>
+        <form action="/" method="post">
+          <input type="submit" class="ghost-button" value="Generate Random Cat Fact!">
+        </form>
+        <% if(fact !== null){ %>
+          <p><%= fact %></p>
+        <% } %>
+      </fieldset>
+    </div>
+  </body>
+</html>
