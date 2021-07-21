@@ -2,6 +2,8 @@
 
 Simple NodeJS/Express App
 
+[Cat Facts API](https://catfact.ninja/)
+
 ## Steps to run the app
 
 If this is the first time cloning the app, make sure to install all required packages
