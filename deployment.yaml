@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: random-cat-facts
+spec:
+  selector:
+    matchLabels:
+      run: random-cat-facts
+  template:
+    metadata:
+      labels:
+        run: random-cat-facts
+    spec:
+      containers:
+      - name: random-cat-facts
+        image: us.icr.io/mrinasugosh/random-cat-facts:1
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+        - name: icr
